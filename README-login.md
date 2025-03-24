@@ -24,3 +24,18 @@ The EG4 monitoring system requires authentication via a web interface. After log
 
 The login URL for the EG4 monitoring system is:
 
+https://monitor.eg4electronics.com/WManage/web/login
+
+You’ll need the following credentials:
+- **Account**: Your EG4 account username.
+- **Password**: Your EG4 account password.
+
+Store these credentials securely in a `config.php` file:
+
+```php
+<?php
+return [
+    'account' => 'your-username',
+    'password' => 'your-password',
+    'serialNum' => 'your-serial-number'
+];
