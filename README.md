@@ -4,6 +4,24 @@ This repository documents key API endpoints for the EG4 Monitoring System, provi
 
 ---
 
+## ⚙️ Sample Usage
+
+You can use the provided `eg4_api.php` script as a base for interacting with the EG4 API.
+It supports login and provides wrapper functions for all documented endpoints.
+
+**Files:**
+- `eg4_api.php`: Main interface with EG4 endpoints
+- `config.php`: Configuration with `account`, `password`, `serialNum`, and `plantId`
+- `cookies.txt`: Session storage file used automatically
+
+```php
+require 'eg4_api.php';
+```
+
+Uncomment the function calls in `eg4_api.php` to fetch energy, runtime, monthly, or daily data,
+or to list your registered inverters.
+
+---
 ## 📘 Available Endpoint Docs
 
 - [`README-login.md`](./README-login.md)  
